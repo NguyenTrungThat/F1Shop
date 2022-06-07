@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base1.css"/>
+    <link rel="stylesheet" href="./assets/css/main1.css"/>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -49,7 +51,7 @@
                     </ul>
 
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class=" header__navbar-item header__navbar-item--bada">
                             <a href="" class="header__navbar-item-link">
                                 <i class="fas fa-bell">
                                 </i>
@@ -84,7 +86,7 @@
                                     </li>
                                 </ul>
                                 <footer class="header__notification-footer">
-                                    <a href="" class="header__notification-footer-btn">Xem tất cả</a>
+                                    <a href="" class="header__notification-footer-btn1">Xem tất cả</a>
                                 </footer>
                             </div>
                         </li>
@@ -109,7 +111,113 @@
         <footer class="footer">
 
         </footer>
+       
     </div>
+    <!-- Modal layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            
+
+                <!-- Register from -->
+                 <div class="auth-form">
+                   <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form_form">
+                        <div class="auth-form__gr">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="auth-form__gr">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__gr">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__themvao">
+                        <p class="auth-form__chinhsach">
+                            Bằng việc đăng kí, bạn đã đồng ý với F1-shop về 
+                            <a href="" class="auth-form__chinhsach-link">Điều khoản dịch vụ</a> & 
+                            <a href="" class="auth-form__chinhsach-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__dangkytrolai">
+                        <button class="btn btn--normal auth-form__dangkytrolai-black">TRỞ LẠI</button>
+                        <button class="btn btn--chinh">ĐĂNG KÝ</button>
+                    </div>
+                   </div>
+
+                    <div class="auth-form__mangxahoi">
+                        <a href="" class="auth-form__mangxahoi--facebook btn btn--size-s bnt--with-icon">
+                            <i class="auth-form__mangxahoi-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__mangxahoi--title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__mangxahoi--google btn btn--size-s bnt--with-icon">
+                            <i class="auth-form__mangxahoi-icon fab fa-google"></i>
+                            <span class="auth-form__mangxahoi--title">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> -->
+
+                               <!-- Login from -->
+                                <div class="auth-form">
+                                <div class="auth-form__container">
+                                 <div class="auth-form__header">
+                                     <h3 class="auth-form__heading">Đăng nhập</h3>
+                                     <span class="auth-form__switch-btn">Đăng ký</span>
+                                 </div>
+             
+                                 <div class="auth-form_form">
+                                     <div class="auth-form__gr">
+                                         <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                                     </div>
+                                     <div class="auth-form__gr">
+                                         <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                                     </div>
+                                    
+                                 </div>
+             
+                                 <div class="auth-form__themvao">
+                                    <div class="auth-form__help">
+                                        <a href="" class="auth-form__help-link auth-form__help-quen">Quên mật khẩu</a>
+                                        <sapn class="auth-form__help-daucach"></sapn>
+                                        <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                                    </div>
+                                 </div>
+             
+                                 <div class="auth-form__dangkytrolai">
+                                     <button class="btn btn--normal auth-form__dangkytrolai-black">TRỞ LẠI</button>
+                                     <button class="btn btn--chinh">ĐĂNG NHẬP</button>
+                                 </div>
+                                </div>
+             
+                                 <div class="auth-form__mangxahoi">
+                                     <a href="" class="auth-form__mangxahoi--facebook btn btn--size-s bnt--with-icon">
+                                         <i class="auth-form__mangxahoi-icon fab fa-facebook-square"></i>
+                                         <span class="auth-form__mangxahoi--title">
+                                             Đăng nhập với Facebook
+                                         </span>
+                                     </a>
+                                     <a href="" class="auth-form__mangxahoi--google btn btn--size-s bnt--with-icon">
+                                         <i class="auth-form__mangxahoi-icon fab fa-google"></i>
+                                         <span class="auth-form__mangxahoi--title">
+                                             Đăng nhập với Google
+                                         </span>
+                                     </a>
+                                 </div>
+                             </div>
+        </div>
+    </div> -->
 </body>
 
 </html>

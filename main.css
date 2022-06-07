@@ -21,7 +21,11 @@
 }
 
 .header__navbar-item:hover .header__qr {
-    display: block !important;
+    display: block ;
+}
+
+.header__navbar-item--bada:hover .header__notification {
+    display: block;
 }
 
 .header__navbar-item,
@@ -137,6 +141,7 @@
 }
 
 /* Header notification */
+
 .header__notification {
     position: absolute;
     top: 118%;
@@ -144,7 +149,43 @@
     width: 404px;
     border: 1px solid #f1f3f4;
     background-color: var(--white-color);
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: header__notification-Growth ease-in 0.2s;
+    will-change: opacity, transform ;
+    display: none;
 } 
+
+.header__notification::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 12px;
+    top: -29px;
+}
+
+.header__notification::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -16px;
+    width: 90px;
+    height: 20px;
+}
+
+@keyframes header__notification-Growth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .header__notification-header {
     height: 40px;
     background-color: var(--white-color);
@@ -156,6 +197,7 @@
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 40px;
+    user-select:none;
 }
 .header__notification-list {
     padding-left: 0;
@@ -197,17 +239,22 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: #756F6E;
+    margin-top: 4px;
 
 } 
 
 .header__notification-footer {
+   display: flex;
+  
+}
+
+.header__notification-footer-btn1 {
+    text-decoration: none;
+    color: var(--text-color);
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
     text-align: center;
 }
 
-.header__notification-footer-btn {
-    text-decoration: none;
-    color: var(--black-color);
-    padding: 20px 16px;
-    font-size: 1.4rem;
-    font-weight: 400;
-}

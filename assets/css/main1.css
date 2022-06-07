@@ -209,3 +209,133 @@
     color: var(--black-color);
     padding: 16px 16px;
 }
+
+/* Authen modal */
+
+.auth-form {
+    width: 500px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 12px;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color:var(--text-color);
+    cursor: pointer;
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.auth-form_form {
+}
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #888;
+}
+
+.auth-form__themvao {
+    margin-top: 18px;
+}
+
+.auth-form__chinhsach {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__chinhsach-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-form__dangkytrolai {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+
+.auth-form__dangkytrolai-black {
+    margin-right: 8px;
+}
+
+.auth-form__mangxahoi {
+    background-color: #F5F5F5;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.auth-form__mangxahoi-icon {
+    font-size: 1.8rem;
+}
+
+.auth-form__mangxahoi--facebook {
+    color: var(--white-color);
+    background-color: #1755d0;
+}
+
+.auth-form__mangxahoi--facebook 
+.auth-form__mangxahoi-icon {
+    color: var(--white-color);
+}
+
+.auth-form__mangxahoi--title {
+    margin: 0 16px;
+}
+
+.auth-form__mangxahoi--google {
+    color: #666;
+    background-color:var(--white-color);
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393;
+}
+
+.auth-form__help-daucach {
+    display: block;
+    height: 22px;
+    margin: 2px 16px 0;
+    border-left: 1px solid #EAEAEA;
+}
+
+.auth-form__help-quen {
+    color: var(--primary-color);
+}
