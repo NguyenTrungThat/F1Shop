@@ -896,6 +896,7 @@
     align-items: center;
     padding: 12px 22px;
     border-radius: 2px;
+    margin-bottom: 10px;
     background-color: rgba(118, 115, 115, 0.711);
 }
 
@@ -962,9 +963,25 @@
 
 /* Product item */
 
+.home-product {
+    margin-bottom: 10px;
+}
 .home-product-item {
+    display: block;
+    position: relative;
     margin-top: 10px;
+    text-decoration: none;
     background-color: var(--white-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: transform ease-in 0.1s;
+
+}
+
+.home-product-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.3);
 }
 
 .home-product-item__img {
@@ -1061,10 +1078,72 @@ i.home-product-item__like-icon-ay {
     margin-left: auto;
 }
 
-.home-product-item__favourite {}
+.home-product-item__favourite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
 
-.home-product-item__sale-off {}
+.home-product-item__favourite::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-top: 3px solid green;
+    border-left: 3px solid transparent;
+    filter: brightness(70%);
+}
 
-.home-product-item__percent {}
+.home-product-item__favourite span {
+    color: var(--white-color);
+}
 
-.home-product-item__sale-off-label {}
+.home-product-item__favourite i {
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
+}
+
+.home-product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    background-color: rgb(255, 216, 64, 0.96);
+}
+
+.home-product-item__sale-off::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-width: 0 20px 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 216, 64, 0.96) transparent rgb(255, 216, 64, 0.96);
+}
+
+.home-product-item__sale-off-percent {
+    color: #EE4D2D;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    position: relative;
+}
+
+.home-product-item__sale-off-label {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    position: relative;
+    font-weight: 500;
+}
